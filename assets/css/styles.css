@@ -334,6 +334,36 @@ a.dotted-link:hover {
     color: #5f6b77;
 }
 
+/* Extra-curricular Section */
+.extra-curricular .item {
+    margin-bottom: 30px;
+}
+
+.extra-curricular .item .title {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.extra-curricular .item .title .place {
+    color: #999;
+    font-weight: normal;
+}
+
+.extra-curricular .item .title .place a {
+    color: #999;
+}
+
+.extra-curricular .item .title .place a:hover {
+    color: #666666;
+}
+
+.extra-curricular .item .title .year {
+    color: #999;
+    font-weight: normal;
+}
+
 /* Work Section */
 .experience .item {
     margin-bottom: 30px;
