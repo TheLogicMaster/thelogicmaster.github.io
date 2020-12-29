@@ -39,7 +39,6 @@
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-
 </head>
 
 <body>
@@ -118,22 +117,17 @@
 
                         <div class="item featured text-center">
                             <h3 class="title"><a href="http://thelogicmaster.github.io/Tower-Defense-Galaxy/"
-                                                 target="_blank">Tower Defense Galaxy</a></h3>
-                            <p class="summary">A modular 3D tower defense game</p>
+                                                 target="_blank">Robot Recharge</a></h3>
+                            <p class="summary">A multi-platform programming puzzle game</p>
                             <div class="featured-image has-ribbon">
-                                <a href="http://thelogicmaster.github.io/Tower-Defense-Galaxy/" target="_blank">
-                                    <img class="img-fluid project-image"
-                                         src="assets/images/projects/project-featured.png" alt="tower-defense-galaxy"/>
-                                </a>
-                                <div class="ribbon">
-                                    <div class="text">New</div>
-                                </div>
+                                <iframe id="game" data-url="https://thelogicmaster.github.io/robot-recharge/" src="" width="640" height="360"></iframe>
+                                <img id="game-preview" style="position: absolute; left: 0" width="640" height="360" src="https://github.com/TheLogicMaster/robot-recharge/blob/master/media/screenshot1.png?raw=true">
+                                <button id="play-button" onclick="let game = document.getElementById('game'); game.src = game.getAttribute('data-url'); document.getElementById('play-button').style.display = 'none'; document.getElementById('game-preview').style.display = 'none';" style="position: absolute; left: 270px; top: 180px">Load Game</button>
                             </div>
 
                             <div class="desc text-left">
-                                <p>This project is the culmination of my efforts while learning java- I will now proceed
-                                    to rewrite the entire thing to see how much better I can make it, whenever time is
-                                    permitting.</p>
+                                <p>This is a game created using LibGDX that allows programming in a handful of languages
+                                to help a robot complete levels.</p>
                             </div><!--//desc-->
                         </div><!--//item-->
                         <hr class="divider"/>
@@ -414,5 +408,5 @@
 <!-- custom js -->
 <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
-</html> 
+</html>
 
