@@ -66,8 +66,8 @@
                         <a class="dropdown-item" href="glados.html" target="_self">Glados Lamp</a>
                         <a class="dropdown-item" href="http://thelogicmaster.github.io/Tower-Defense-Galaxy/">Tower
                             Defense Galaxy</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Something else here</a>
+                        <!--                        <div class="dropdown-divider"></div>-->
+                        <!--                        <a class="dropdown-item" href="">Something else here</a>-->
                     </div>
                 </li>
             </ul>
@@ -78,21 +78,17 @@
         <img class="profile-image img-fluid float-left" src="assets/images/profile.png" alt="Justin Marentette"/>
         <div class="profile-content float-left">
             <h1 class="name">Justin Marentette</h1>
-            <h2 class="desc">Java Developer</h2>
+            <h2 class="desc">Software Developer</h2>
             <ul class="social list-inline">
-                <li class="list-inline-item"><a href="https://twitter.com/LogicMaster63"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="list-inline-item"><a href="https://plus.google.com/+JustinMarentette"><i
-                        class="fab fa-google-plus-g"></i></a></li>
-                <li class="list-inline-item"><a href="https://www.linkedin.com/in/justin-marentette"><i
-                        class="fab fa-linkedin-in"></i></a></li>
                 <li class="list-inline-item"><a href="https://github.com/TheLogicMaster"><i
                         class="fab fa-github-alt"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/justin-marentette"><i
+                        class="fab fa-linkedin-in"></i></a></li>
                 <li class="list-inline-item"><a href="https://stackoverflow.com/story/thelogicmaster"><i
                         class="fab fa-stack-overflow"></i></a></li>
             </ul>
         </div><!--//profile-->
-        <a class="btn btn-cta-primary float-right" href="mailto:justinmarentette11@gmail.com" target="_blank"><i
+        <a class="btn btn-cta-primary float-right" href="mailto:thelogicmaster@thelogicmaster.com" target="_blank"><i
                 class="fas fa-paper-plane"></i> Contact Me</a>
     </div><!--//container-->
 </header><!--//header-->
@@ -104,8 +100,7 @@
                 <div class="section-inner">
                     <h2 class="heading">About Me</h2>
                     <div class="content">
-                        <p>I'm a programmer who enjoys solving logical challenges and creating modular hierarchies. I
-                            also enjoy making 3D printed electronic projects with arduino type programming. </p>
+                        <p>I'm a programmer who enjoys hacking and game development. </p>
                     </div><!--//content-->
                 </div><!--//section-inner-->
             </section><!--//section-->
@@ -116,21 +111,45 @@
                     <div class="content">
 
                         <div class="item featured text-center">
-                            <h3 class="title"><a href="http://thelogicmaster.github.io/Tower-Defense-Galaxy/"
+                            <h3 class="title"><a href="https://github.com/TheLogicMaster/robot-recharge"
                                                  target="_blank">Robot Recharge</a></h3>
                             <p class="summary">A multi-platform programming puzzle game</p>
                             <div class="featured-image has-ribbon">
-                                <iframe id="game" data-url="https://thelogicmaster.github.io/robot-recharge/" src="" width="640" height="360"></iframe>
-                                <img id="game-preview" style="position: absolute; left: 0" width="640" height="360" src="https://github.com/TheLogicMaster/robot-recharge/blob/master/media/screenshot1.png?raw=true">
-                                <button id="play-button" onclick="let game = document.getElementById('game'); game.src = game.getAttribute('data-url'); document.getElementById('play-button').style.display = 'none'; document.getElementById('game-preview').style.display = 'none';" style="position: absolute; left: 270px; top: 180px">Load Game</button>
+                                <iframe id="robot-game" data-url="https://thelogicmaster.github.io/robot-recharge/"
+                                        src="" width="640" height="360"></iframe>
+                                <img id="robot-game-preview" style="position: absolute; left: 0" width="640"
+                                     height="360"
+                                     src="https://github.com/TheLogicMaster/robot-recharge/blob/master/media/screenshot1.png?raw=true">
+                                <button id="robot-play-button"
+                                        onclick="let game = document.getElementById('robot-game'); game.src = game.getAttribute('data-url'); document.getElementById('robot-play-button').style.display = 'none'; document.getElementById('robot-game-preview').style.display = 'none';"
+                                        style="position: absolute; left: 270px; top: 180px">Load Game
+                                </button>
                             </div>
 
                             <div class="desc text-left">
                                 <p>This is a game created using LibGDX that allows programming in a handful of languages
-                                to help a robot complete levels.</p>
+                                    to help a robot complete levels.</p>
                             </div><!--//desc-->
                         </div><!--//item-->
+
                         <hr class="divider"/>
+
+                        <div class="item featured text-center">
+                            <h3 class="title"><a href="https://github.com/TheLogicMaster/lm8"
+                                                 target="_blank">LM8</a></h3>
+                            <p class="summary">LM8 - A custom 8-bit computer and software suite</p>
+                            <div class="featured-image has-ribbon">
+                                <img id="lm8-game-preview" width="683" height="366"
+                                     src="https://github.com/TheLogicMaster/lm8/blob/master/docs/media/debugger.png?raw=true">
+                            </div>
+
+                            <div class="desc text-left">
+                                <p>This project is a custom 8-bit computer architecture comprised of an Assembler,
+                                    an Emulator, a C compiler, a Jetbrains IDE language support plugin, a
+                                    Logisim-Evolution
+                                    simulation, a Digital simulation, and a VHDL FPGA implementation.</p>
+                            </div><!--//desc-->
+                        </div><!--//item-->
                     </div><!--//content-->
                 </div><!--//section-inner-->
             </section><!--//section-->
@@ -140,27 +159,38 @@
                     <h2 class="heading">Other Projects</h2>
                     <div class="content">
                         <div class="item">
-                            <h3 class="title"><a href="https://github.com/uplinksystems/eScreens"
-                                                 target="_blank">eScreens - A RPI based display control system
-                                Wrapper</a></h3>
-                            <p class="summary">Need to schedule dynamic content for a group of displays? Here's one implementation</p>
-                            <p><a class="more-link" href="https://github.com/TheLogicMaster/RobotTrumpScript"
+                            <h3 class="title"><a href="https://github.com/TheLogicMaster/simple-chat-app"
+                                                 target="_blank">Simple Chat App - An AWS/Vue chat app</a></h3>
+                            <p class="summary">A simple chat app with an AWS based backed and a Quasar framework
+                                frontend</p>
+                            <p><a class="more-link" href="https://github.com/TheLogicMaster/simple-chat-app"
                                   target="_blank"><i class="fas fa-external-link-alt"></i>View Project</a></p>
                         </div><!--//item-->
+
                         <div class="item">
-                            <h3 class="title"><a href="https://github.com/uplinksystems/eScreens"
-                                                 target="_blank">O'ink</a></h3>
-                            <p class="summary"></p>
-                            <p><a class="more-link" href="https://github.com/TheLogicMaster/RobotTrumpScript"
+                            <h3 class="title"><a href="https://github.com/TheLogicMaster/ESP-Smart-Display"
+                                                 target="_blank">ESP Smart Display - An LED matrix display firmware</a>
+                            </h3>
+                            <p class="summary">A modular and customizable ESP8266/ESP32 based PX LED matrix panel
+                                Arduino firmware</p>
+                            <p><a class="more-link" href="https://github.com/TheLogicMaster/ESP-Smart-Display"
                                   target="_blank"><i class="fas fa-external-link-alt"></i>View Project</a></p>
                         </div><!--//item-->
+
                         <div class="item">
-                            <h3 class="title"><a href="https://github.com/TheLogicMaster/RobotTrumpScript"
-                                                 target="_blank">RobotTrumpScript - A WIP FRC TrumpScript Python
-                                Wrapper</a></h3>
-                            <p class="summary">Ever thought that programming robots was too easy? Then this is the
-                                language for you.</p>
-                            <p><a class="more-link" href="https://github.com/TheLogicMaster/RobotTrumpScript"
+                            <h3 class="title"><a href="https://github.com/uplinksystems/eScreens"
+                                                 target="_blank">eScreens - A RPI based digital signal system</a></h3>
+                            <p class="summary">Need to schedule dynamic content for a group of displays? Here's one
+                                implementation</p>
+                            <p><a class="more-link" href="https://github.com/uplinksystems/eScreens"
+                                  target="_blank"><i class="fas fa-external-link-alt"></i>View Project</a></p>
+                        </div><!--//item-->
+
+                        <div class="item">
+                            <h3 class="title"><a href="https://www.indiedb.com/games/oink"
+                                                 target="_blank">O'ink - An indie 3D platformer</a></h3>
+                            <p class="summary">A cartoon style platformer in style of the classics</p>
+                            <p><a class="more-link" href="https://www.indiedb.com/games/oink"
                                   target="_blank"><i class="fas fa-external-link-alt"></i>View Project</a></p>
                         </div><!--//item-->
 
@@ -175,12 +205,14 @@
                         </div><!--//item-->
 
                         <div class="item">
-                            <h3 class="title"><a href="https://github.com/FRC2832/Robot_2019" target="_blank">FRC
+                            <h3 class="title"><a href="https://github.com/FRC2832/Robot_2019" target="_blank">First
+                                Robotics Competition
                                 2019</a></h3>
                             <p class="summary">Team 2832's code for the 2019 build season.</p>
                             <p><a class="more-link" href="https://github.com/FRC2832/Robot_2019"
                                   target="_blank"><i class="fas fa-external-link-alt"></i>View Project</a></p>
                         </div><!--//item-->
+
                         <div class="item">
                             <h3 class="title"><a href="glados.html" target="_self">Glados Lamp</a></h3>
                             <p class="summary">A 3D printed robot lamp utilizing a DMX512 RGBA 3W LED driver with four
@@ -188,18 +220,6 @@
                                 freedom.</p>
                             <p><a class="more-link" href="glados.html"
                                   target="_self"><i class="fas fa-external-link-alt"></i>View Project</a></p>
-                        </div><!--//item-->
-                        <div class="item">
-                            <h3 class="title"><a href="https://knowlife4.itch.io/bfbbhdr" target="_self">Battle for
-                                Bikini Bottom Rehydrated</a></h3>
-                            <p class="summary">A remake of a classic GameCube game. I wrote the enemy modular enemy AI
-                                hierarchy and contributed in converting the project from unityscript to C#. I also
-                                modified the Unet HLAPI library to support the MLAPI relay server to bypass using
-                                Unity's paid networking services and modified the code to enable multiplayer.</p>
-                            <p><a class="more-link" href="https://github.com/TheLogicMaster/MLAPI-Relay-Unet"
-                                  target="_self"><i class="fas fa-external-link-alt"></i>Modified HLAPI</a></p>
-                            <p><a class="more-link" href="https://knowlife4.itch.io/bfbbhdr"
-                                  target="_blank"><i class="fas fa-external-link-alt"></i>View Project</a></p>
                         </div><!--//item-->
                     </div><!--//content-->
                 </div><!--//section-inner-->
@@ -234,8 +254,8 @@
                                 <span class="year">(2018-2019)</span></h3>
                         </div><!--//item-->
                         <div class="item">
-                            <h3 class="title">Python Developer - <span class="place"><a href="">Uplink Systems</a></span>
-                                <span class="year">(2019-present)</span></h3>
+                            <h3 class="title">Python/Java Developer - <span class="place"><a href="">Uplink Systems</a></span>
+                                <span class="year">(2019-2020)</span></h3>
                         </div><!--//item-->
 
                     </div><!--//content-->
@@ -265,7 +285,7 @@
                             <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Michigan, US
                             </li>
                             <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
-                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=justinmarentette11@gmail.com">justinmarentette11@gmail.com</a>
+                                    href="mailto:thelogicmaster@thelogicmaster.com">thelogicmaster@thelogicmaster.com</a>
                             </li>
                             <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a
                                     href="http://thelogicmaster.com/">thelogicmaster.com</a></li>
@@ -285,7 +305,7 @@
                             <div class="item">
                                 <h3 class="level-title">Java<span class="level-label" data-toggle="tooltip"
                                                                   data-placement="left" data-animation="true"
-                                                                  title="It's hard to represent ability in such a linear fashion, but here's something."><i
+                                                                  title="It's hard to represent ability in such a linear fashion, but here's something"><i
                                         class="fas fa-info-circle"></i>Experienced</span></h3>
                                 <div class="level-bar">
                                     <div class="level-bar-inner" data-level="90%">
@@ -294,12 +314,56 @@
                             </div><!--//item-->
 
                             <div class="item">
-                                <h3 class="level-title">C#<span class="level-label" data-toggle="tooltip"
-                                                                data-placement="left" data-animation="true"
-                                                                title="Only started with it a few months ago, but it's essentially Java with less boilerplate code and stricter types."><i
+                                <h3 class="level-title">C<span class="level-label" data-toggle="tooltip"
+                                                               data-placement="left" data-animation="true"
+                                                               title="Implemented a C compiler backend"><i
+                                        class="fas fa-info-circle"></i>Advanced</span></h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="85%">
+                                    </div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="level-title">Python<span class="level-label" data-toggle="tooltip"
+                                                                    data-placement="left" data-animation="true"
+                                                                    title="Experience using Python primarily as a scripting language"><i
                                         class="fas fa-info-circle"></i>Intermediate</span></h3>
                                 <div class="level-bar">
                                     <div class="level-bar-inner" data-level="80%">
+                                    </div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="level-title">C++<span class="level-label" data-toggle="tooltip"
+                                                                 data-placement="left" data-animation="true"
+                                                                 title="Implemented a GameBoy emulator"><i
+                                        class="fas fa-info-circle"></i>Intermediate</span></h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="75%">
+                                    </div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="level-title">VHDL<span class="level-label" data-toggle="tooltip"
+                                                                  data-placement="left" data-animation="true"
+                                                                  title="Implemented a microcontroller in VHDL"><i
+                                        class="fas fa-info-circle"></i>Intermediate</span></h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="75%">
+                                    </div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="level-title">C#<span class="level-label" data-toggle="tooltip"
+                                                                data-placement="left" data-animation="true"
+                                                                title="Experience from working with Unity"><i
+                                        class="fas fa-info-circle"></i>Intermediate</span></h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="75%">
                                     </div>
                                 </div><!--//level-bar-->
                             </div><!--//item-->
@@ -325,32 +389,34 @@
                             </h4>
                         </div><!--//item-->
                         <div class="item">
-                            <h3 class="title"><i class="fas fa-graduation-cap"></i> Electrical Engingeering</h3>
-                            <h4 class="university">University of Michigan-Dearborn <span class="year">(2019 - 2022)</span>
+                            <h3 class="title"><i class="fas fa-graduation-cap"></i> Electrical and Computer Engineering
+                            </h3>
+                            <h4 class="university">University of Michigan-Dearborn <span
+                                    class="year">(2019 - 2023)</span>
                             </h4>
                         </div><!--//item-->
                     </div><!--//content-->
                 </div><!--//section-inner-->
             </aside><!--//section-->
 
-            <aside class="list music aside section">
-                <div class="section-inner">
-                    <h2 class="heading">Favourite coding music</h2>
-                    <div class="content">
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-headphones"></i> <a
-                                    href="https://www.youtube.com/channel/UCa_UMppcMsHIzb5LDx1u9zQ">TheFatRat</a></li>
-                            <li><i class="fas fa-headphones"></i> <a
-                                    href="https://www.youtube.com/channel/UC0jd1RjiMOAbs4CikoADJGA">Mystery Skulls</a>
-                            </li>
-                            <li><i class="fas fa-headphones"></i> <a
-                                    href="https://www.youtube.com/channel/UCJ6td3C9QlPO9O_J5dF4ZzA">Monstercat</a></li>
-                            <li><i class="fas fa-headphones"></i> <a
-                                    href="https://www.youtube.com/channel/UC8WbdD3m5dP9giOU9XtAGWQ">M83</a></li>
-                        </ul>
-                    </div><!--//content-->
-                </div><!--//section-inner-->
-            </aside><!--//section-->
+            <!--            <aside class="list music aside section">-->
+            <!--                <div class="section-inner">-->
+            <!--                    <h2 class="heading">Favourite coding music</h2>-->
+            <!--                    <div class="content">-->
+            <!--                        <ul class="list-unstyled">-->
+            <!--                            <li><i class="fas fa-headphones"></i> <a-->
+            <!--                                    href="https://www.youtube.com/channel/UCa_UMppcMsHIzb5LDx1u9zQ">TheFatRat</a></li>-->
+            <!--                            <li><i class="fas fa-headphones"></i> <a-->
+            <!--                                    href="https://www.youtube.com/channel/UC0jd1RjiMOAbs4CikoADJGA">Mystery Skulls</a>-->
+            <!--                            </li>-->
+            <!--                            <li><i class="fas fa-headphones"></i> <a-->
+            <!--                                    href="https://www.youtube.com/channel/UCJ6td3C9QlPO9O_J5dF4ZzA">Monstercat</a></li>-->
+            <!--                            <li><i class="fas fa-headphones"></i> <a-->
+            <!--                                    href="https://www.youtube.com/channel/UC8WbdD3m5dP9giOU9XtAGWQ">M83</a></li>-->
+            <!--                        </ul>-->
+            <!--                    </div>&lt;!&ndash;//content&ndash;&gt;-->
+            <!--                </div>&lt;!&ndash;//section-inner&ndash;&gt;-->
+            <!--            </aside>&lt;!&ndash;//section&ndash;&gt;-->
 
             <aside class="credits aside section">
                 <div class="section-inner">
